@@ -3,6 +3,13 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+# NVIDIA SDK files
+nvapi.h
+nvapi.lib
+nvapi64.lib
+nvml.h
+nvml.lib
+
 # User-specific files
 *.suo
 *.user
