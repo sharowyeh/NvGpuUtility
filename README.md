@@ -1,4 +1,4 @@
-## Win32 and .NET wrapper for NVDIA GPU Utility
+## NVIDIA GPU utility for Win32 and .NET wrapper
 
 The utility support basic adjustments for NVIDIA GPU likes frequencies, voltages, thermal efficiency and power limitation, included projects represent [NVAPI](https://developer.nvidia.com/nvapi) and [NVML](https://developer.nvidia.com/nvidia-management-library-nvml) function as traditional Win32 and .NET libraries.
 
