@@ -8,6 +8,10 @@ Make sure you know what influence on GPU before using utility, ignorance may cau
 
 First of all, must registered [NVIDIA developer](https://developer.nvidia.com/) account then downloaded NVAPI SDK and CUDA toolkit, because NVML has been merged a part of deployment kit also as a part of CUDA toolkit
 
+**UPDATE:**
+
+Most of NVAPI features are only available in **NDA edition**, you may need to send [NDA request form](https://developer.nvidia.com/content/nvapi_request) for the NDA specific version.
+
 Unzip NVAPI SDK and install CUDA toolkit.
 
 A visual studio c++ expert, may checking or making environment variables of these SDK's installation path, for later using in additional directories of nvapihelper project property.
