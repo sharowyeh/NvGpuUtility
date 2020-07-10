@@ -1,3 +1,9 @@
+**UPDATE 20200710:**
+
+Seems NV stopped public NDA developer registration, maybe let's make the project as sweet memory during my software development life. :flushed:
+
+If you are a poor old guy just like me, and still keeping R36x(R37x?) NDA version of nvapi library, welcome build a toy for fun. :+1:
+
 ## Win32 and .NET wrapper for NVDIA GPU Utility
 
 The utility supports basic adjustments of NVIDIA GPUs likes frequencies, voltages, thermal efficiency and power limitation, included projects represent [NVAPI](https://developer.nvidia.com/nvapi) and [NVML](https://developer.nvidia.com/nvidia-management-library-nvml) functions by traditional Windows dll and .NET libraries on Win32 platform.
@@ -8,9 +14,7 @@ Make sure you know what influence on GPU before using utility, ignorance may cau
 
 First of all, [NVIDIA developer](https://developer.nvidia.com/) account should be registered and downloaded NVAPI SDK and CUDA toolkit. The NVML has been a part of deployment kit as a part of CUDA toolkit.
 
-**UPDATE:**
-
-Most of NVAPI features are only available in **NDA edition**, you may need to complete [NDA request form](https://developer.nvidia.com/content/nvapi_request) for the NDA specific version.
+Most of NVAPI features are only available in **NDA edition**, ~~you may need to complete [NDA request form](https://developer.nvidia.com/content/nvapi_request) for the NDA specific version.~~
 
 Unzip NVAPI SDK and install CUDA toolkit.
 
