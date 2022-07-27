@@ -21,29 +21,3 @@
 #else
 #pragma comment(lib, "lib86/nvapi.lib")
 #endif
-/// For debug log
-#include <iostream>
-#include <fstream>
-#include <string>
-#include <ShlObj.h>
-#pragma comment(lib, "shell32.lib")
-using std::ofstream;
-using std::ios;
-using std::string;
-//tar201708081530 replace log path to common application data folder
-#define LOGFILE(fmt, ...) {																					\
-							if (true) {																\
-								char buff[1024] = "";													\
-								sprintf_s(buff, fmt, ##__VA_ARGS__);										\
-								ofstream log;																\
-								char path[MAX_PATH];														\
-								if (SUCCEEDED(SHGetFolderPathA(NULL, CSIDL_COMMON_APPDATA, NULL, 0, path))) { \
-									strcat_s(path, "\\NvApiHelper\\Log_NVAPI.txt");						\
-									log.open(path, ios::app);												\
-									log << (buff);															\
-									log.close();															\
-								}																			\
-							}																				\
-						  }
-
-// TODO: reference additional headers your program requires here

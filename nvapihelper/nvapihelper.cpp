@@ -1,5 +1,7 @@
 #include "stdafx.h"
 #include "nvapihelper.h"
+#include "logger.h"
+#include <string>
 
 struct NvGpuStatus
 {
@@ -1257,7 +1259,7 @@ NvAPI_Status GetCurrentSliState(NvU32* pdwCurrentAFRIndex, NvU32* pdwAFRGroups, 
 		LOGFILE("status:%d NvAPI_D3D_GetCurrentSLIState sli:0x%p\n", status, sli);
 		if (status == NVAPI_OK)
 		{
-			LOGFILE(" sliisnew:%d afrndex:%d afrgrop:%d maxgrop:%d vrgpu:%d\n", sli.bIsCurAFRGroupNew, sli.currentAFRIndex, sli.numAFRGroups, sli.maxNumAFRGroups, sli.numVRSLIGpus)
+			LOGFILE(" sliisnew:%d afrndex:%d afrgrop:%d maxgrop:%d vrgpu:%d\n", sli.bIsCurAFRGroupNew, sli.currentAFRIndex, sli.numAFRGroups, sli.maxNumAFRGroups, sli.numVRSLIGpus);
 		}
 
 		pDeviceContext->Release();

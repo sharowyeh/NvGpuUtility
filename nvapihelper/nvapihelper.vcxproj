@@ -162,6 +162,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\nvapi.h" />
+    <ClInclude Include="logger.h" />
     <ClInclude Include="nvapihelper.h" />
     <ClInclude Include="include\nvml.h" />
     <ClInclude Include="resource.h" />
@@ -183,6 +184,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
       </PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="logger.cpp" />
     <ClCompile Include="nvapihelper.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
