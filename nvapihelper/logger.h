@@ -9,7 +9,7 @@ typedef enum log_levels_t {
 	LOG_WARNING = 3,
 	LOG_ERROR = 4,
 	LOG_FATAL = 5
-};
+} LOG_LEVELS;
 
 void __declspec(dllexport) _set_log(int level);
 void __declspec(dllexport) _log_to_appdata(int level, const char* format, ...);

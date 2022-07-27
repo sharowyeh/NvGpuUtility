@@ -203,10 +203,10 @@ namespace NvGpuUtilityLib
             return true;
         }
 
-        public bool GetUtilizationSample(uint index, out uint procId, out uint procUtil)
+        public bool GetUtilizationSample(uint index, out uint procId, out uint procUtil, out string procName)
         {
             uint procCount = 0;
-            StringBuilder procName = new StringBuilder(256);
+            StringBuilder szProcName = new StringBuilder(256);
             procCount = 3;
             ProcessUtilizationSample[] samples = new ProcessUtilizationSample[3];
             var result = NvApiLib.GetProcessUtilization(index, out procCount, samples);
@@ -214,11 +214,13 @@ namespace NvGpuUtilityLib
             {
                 procId = samples[0].pid;
                 procUtil = samples[0].smUtil;
+                procName = System.Diagnostics.Process.GetProcessById((int)procId).ProcessName;
             }
             else
             {
                 procUtil = 0;
                 procId = 0;
+                procName = "";
             }
             return result == 0;
         }

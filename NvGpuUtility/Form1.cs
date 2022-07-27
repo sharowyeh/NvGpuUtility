@@ -65,8 +65,9 @@ namespace NvGpuUtility
                 //Test get highest utilization of process id
                 uint procId = 0;
                 uint procUtil = 0;
-                if (manager.GetUtilizationSample(gpuInfo.Index, out procId, out procUtil) == true)
-                    utilResultLabel.Text = string.Format("proc id:{0} util:{1}", procId, procUtil);
+                string procName = "";
+                if (manager.GetUtilizationSample(gpuInfo.Index, out procId, out procUtil, out procName) == true)
+                    utilResultLabel.Text = string.Format("proc id:{0} util:{1} name:{2}", procId, procUtil, procName);
                 else
                     utilResultLabel.Text = "";
             }
@@ -91,8 +92,9 @@ namespace NvGpuUtility
                 var gpuInfo = gpuInfoList[gpuInfoListComboBox.SelectedIndex];
                 uint procId = 0;
                 uint procUtil = 0;
-                if (manager.GetUtilizationSample(gpuInfo.Index, out procId, out procUtil) == true)
-                    utilResultLabel.Text = string.Format("proc id:{0} util:{1}", procId, procUtil);
+                string procName = "";
+                if (manager.GetUtilizationSample(gpuInfo.Index, out procId, out procUtil, out procName) == true)
+                    utilResultLabel.Text = string.Format("proc id:{0} util:{1} name:{2}", procId, procUtil, procName);
                 else
                     utilResultLabel.Text = "";
             };
