@@ -12,8 +12,8 @@
 #include <windows.h>
 #include <tchar.h>
 #include <d3d11.h>
-#include "nvapi.h"
-#include "nvml.h"
+#include "include/nvapi.h"
+#include "include/nvml.h"
 #pragma comment(lib, "d3d11.lib")
 #ifdef X64
 #pragma comment(lib, "lib64/nvapi64.lib")

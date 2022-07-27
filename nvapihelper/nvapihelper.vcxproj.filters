@@ -19,6 +19,9 @@
     <Filter Include="lib86">
       <UniqueIdentifier>{a298a065-9e95-4c80-a9a3-5453daadda90}</UniqueIdentifier>
     </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{38996f5e-77e9-4bd7-a895-0c51690cf728}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -30,14 +33,14 @@
     <ClInclude Include="nvapihelper.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="nvapi.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="resource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="nvml.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="include\nvapi.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\nvml.h">
+      <Filter>include</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
