@@ -11,7 +11,7 @@ typedef enum log_levels_t {
 	LOG_FATAL = 5
 } LOG_LEVELS;
 
-void __declspec(dllexport) _set_log(int level);
+void __declspec(dllexport) _set_log(int level, const char* path);
 void __declspec(dllexport) _log_to_appdata(int level, const char* format, ...);
 
 #define LOGFILE(fmt, ...) _log_to_appdata(LOG_INFO, fmt, ##__VA_ARGS__)

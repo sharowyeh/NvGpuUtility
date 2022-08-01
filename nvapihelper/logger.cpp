@@ -21,8 +21,9 @@ using std::string;
 int logger_level = LOG_INFO;
 char logger_buff[4096] = { 0 };
 
-void _set_log(int level)
+void _set_log(int level, const char* path)
 {
+	//TODO: proc given path to specify file prefix or location
 	logger_level = (log_levels_t)level;
 
 	//TODO: maybe specify log file's name by the module and caller
